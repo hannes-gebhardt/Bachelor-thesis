@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Woher kommt unser Strom?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="children.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div class="blob blob-c"></div>
+
+    <svg class="sun" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="26" fill="var(--sun)"></circle>
+      <g stroke="var(--sun)" stroke-width="6" stroke-linecap="round">
+        <line x1="50" y1="4" x2="50" y2="16"></line>
+        <line x1="50" y1="84" x2="50" y2="96"></line>
+        <line x1="4" y1="50" x2="16" y2="50"></line>
+        <line x1="84" y1="50" x2="96" y2="50"></line>
+        <line x1="17" y1="17" x2="26" y2="26"></line>
+        <line x1="74" y1="74" x2="83" y2="83"></line>
+        <line x1="83" y1="17" x2="74" y2="26"></line>
+        <line x1="26" y1="74" x2="17" y2="83"></line>
+      </g>
+    </svg>
+  </div>
+
+  <header class="hero">
+    <h1>Woher kommt unser <span class="highlight">Strom</span>?</h1>
+    <p class="hero-text">Strom ist ein wichtiger Bestandteil unseres Alltags. Wir nutzen ihn für Licht, Heizung, Mobilität und viele andere Dinge.
+     Aber woher kommt eigentlich der ganze Strom? Es gibt zwei wichtige Unterschiede bei den Energiequellen.</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="intro-card intro-card--renewable">
+        <p class="intro-card-title">🌱 Erneuerbare Energien</p>
+        <p>Als erneuerbar bezeichnet man Energiequellen, die nahezu unendlich vorhanden sind. Zum Beispiel wird immer die <strong>Sonne</strong> scheinen, der <strong>Wind</strong> wehen, das <strong>Wasser</strong> fließen und die <strong>Pflanzen</strong> wachsen.
+        Aus diesen Quellen können wir Strom gewinnen, ohne dass sie jemals erschöpft werden.</p>
+      </div>
+      <div class="intro-card intro-card--fossil">
+        <p class="intro-card-title">🪨 Fossile Energien</p>
+        <p>Fossile Energiequellen sind nur limitiert vorhanden. Die Menge an <strong>Kohle</strong>, <strong>Öl</strong> oder <strong>Gas</strong> auf der Erde ist begrenzt. Und es gibt keine Möglichkeit, mehr davon herzustellen.
+          Deshalb können wir uns nicht unbegrenzt auf sie verlassen. Zudem entstehen bei ihrer Nutzung Abgase, die dem Klima schaden.
+        </p>
+      </div>
+    </section>
+
+
+    <section class="chart-section" aria-labelledby="explore-heading">
+      <h2 id="explore-heading">Erneuerbare Energien sind tagesabhängig</h2>
+      <p class="chart-intro">Das größte Problem der erneuerbaren Energien sind die starken Schwankungen in ihrer Verfügbarkeit. Nicht jeden Tag scheint die Sonne oder weht der Wind. Dies kann man gut sehen, wenn man einzelne Tage im Jahr genauer betrachtet. Hier kannst du sehen, was der geringste und der größte Anteil an Sonne und Wind an einem Tag ist. Sehe wie sich der Strommix ändert, wenn du den Regler verschiebst.</p>
+
+      <div class="explore-grid">
+        <div class="explore-widget" id="solar-explore">
+          <p class="explore-readout"><strong id="solar-explore-percent">1 %</strong>Strom aus Sonnenenergie</p>
+          <div class="explore-row">
+            <span class="explore-icon-box"><span class="explore-icon" id="solar-explore-icon">☀️</span></span>
+            <div class="explore-bar-col-wrap">
+              <div class="chart explore-chart"><div class="bar-group"><div class="bar-col" id="solar-explore-bar"></div></div></div>
+            </div>
+          </div>
+          <input type="range" min="0" max="100" value="0" class="explore-slider" id="solar-explore-slider" aria-label="Sonnenanteil zwischen dem niedrigsten und dem höchsten Tag verschieben">
+          <div class="explore-endpoints">
+            <span id="solar-explore-low-label"></span>
+            <span id="solar-explore-high-label"></span>
+          </div>
+          <div class="chart-legend" id="solar-explore-legend"></div>
+        </div>
+
+        <div class="explore-widget" id="wind-explore">
+          <p class="explore-readout"><strong id="wind-explore-percent">3 %</strong>Strom aus Windenergie</p>
+          <div class="explore-row">
+            <span class="explore-icon-box"><span class="explore-icon" id="wind-explore-icon">💨</span></span>
+            <div class="explore-bar-col-wrap">
+              <div class="chart explore-chart"><div class="bar-group"><div class="bar-col" id="wind-explore-bar"></div></div></div>
+            </div>
+          </div>
+          <input type="range" min="0" max="100" value="0" class="explore-slider" id="wind-explore-slider" aria-label="Windanteil zwischen dem niedrigsten und dem höchsten Tag verschieben">
+          <div class="explore-endpoints">
+            <span id="wind-explore-low-label"></span>
+            <span id="wind-explore-high-label"></span>
+          </div>
+          <div class="chart-legend" id="wind-explore-legend"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chart-section" aria-labelledby="chart-heading">
+      <h2 id="chart-heading">Erneuerbare Energien im Jahresverlauf</h2>
+      <p class="chart-intro">Fässt man die Tagesverläufe pro Monat zusammen, sieht man, dass die Produktion von Sonnen- und Windenergie stark von den Jahreszeiten abhängt. Im Sommer scheint die Sonne länger und häufiger, im Winter ist der Wind stärker.
+         Die Grafik zeigt den Anteil der erneuerbaren Energien anhand von einem Monat aus dem Jahr 2025 für jede Jahreszeit. Fahre mit der Maus über ein Feld, um die genaue Zahl zu sehen.</p>
+      <div class="chart" id="mix-chart"></div>
+      <div class="chart-legend" id="mix-legend"></div>
+    </section>
+
+    <section class="chart-section" aria-labelledby="years-heading">
+      <h2 id="years-heading">Energiewende</h2>
+      <p class="chart-intro">Vielleicht hast du schon einmal etwas von der Energiewende gehört. Als Energiewende wird die Umstellung von fossilen auf erneuerbare Energien bezeichnet. Das bedeutet, dass immer mehr Strom aus erneuerbaren Quellen wie Sonne oder Wind erzeugt wird, während auf fossile Energien wie Kohle oder Gas zunehmend verzichtet wird.
+        Hier kannst du die Entwicklung des Strommixes über mehrere Jahre hinweg beobachten. Klicke auf die Jahreszeiten, um zu sehen, in welchen Jahreszeiten der Rückgang fossiler Energien besonders deutlich ist.
+        </p>
+      <div class="season-picker" id="season-picker" role="group" aria-label="Jahreszeit auswählen"></div>
+      <div class="chart" id="years-chart"></div>
+      <div class="chart-legend" id="years-legend"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Alle Daten von <a href="https://energy-charts.info/?l=de&c=DE" target="_blank" rel="noopener">Energy-Charts</a>, einer Webseite des Fraunhofer-Instituts für Solare Energiesysteme ISE</p>
+  </footer>
+
+  <div class="tooltip" id="tooltip" role="tooltip"></div>
+
+  <script src="children.js"></script>
+</body>
+</html>

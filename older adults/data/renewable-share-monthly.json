@@ -1,0 +1,568 @@
+﻿{
+    "source":  "Energy-Charts API v2 /total_power",
+    "country":  "de",
+    "unit":  "percent",
+    "calculation":  "Monthly production-weighted mean of renewable_share_of_generation",
+    "data":  [
+                 {
+                     "date":  "2015-01-01",
+                     "renewableShare":  29.6
+                 },
+                 {
+                     "date":  "2015-02-01",
+                     "renewableShare":  23.2
+                 },
+                 {
+                     "date":  "2015-03-01",
+                     "renewableShare":  29.2
+                 },
+                 {
+                     "date":  "2015-04-01",
+                     "renewableShare":  32.8
+                 },
+                 {
+                     "date":  "2015-05-01",
+                     "renewableShare":  36.6
+                 },
+                 {
+                     "date":  "2015-06-01",
+                     "renewableShare":  33.3
+                 },
+                 {
+                     "date":  "2015-07-01",
+                     "renewableShare":  34.8
+                 },
+                 {
+                     "date":  "2015-08-01",
+                     "renewableShare":  30.9
+                 },
+                 {
+                     "date":  "2015-09-01",
+                     "renewableShare":  29.2
+                 },
+                 {
+                     "date":  "2015-10-01",
+                     "renewableShare":  22.1
+                 },
+                 {
+                     "date":  "2015-11-01",
+                     "renewableShare":  31.2
+                 },
+                 {
+                     "date":  "2015-12-01",
+                     "renewableShare":  33.5
+                 },
+                 {
+                     "date":  "2016-01-01",
+                     "renewableShare":  27.6
+                 },
+                 {
+                     "date":  "2016-02-01",
+                     "renewableShare":  32.6
+                 },
+                 {
+                     "date":  "2016-03-01",
+                     "renewableShare":  28.3
+                 },
+                 {
+                     "date":  "2016-04-01",
+                     "renewableShare":  34.4
+                 },
+                 {
+                     "date":  "2016-05-01",
+                     "renewableShare":  38.4
+                 },
+                 {
+                     "date":  "2016-06-01",
+                     "renewableShare":  32.3
+                 },
+                 {
+                     "date":  "2016-07-01",
+                     "renewableShare":  34.9
+                 },
+                 {
+                     "date":  "2016-08-01",
+                     "renewableShare":  33.2
+                 },
+                 {
+                     "date":  "2016-09-01",
+                     "renewableShare":  27.4
+                 },
+                 {
+                     "date":  "2016-10-01",
+                     "renewableShare":  24.2
+                 },
+                 {
+                     "date":  "2016-11-01",
+                     "renewableShare":  26.4
+                 },
+                 {
+                     "date":  "2016-12-01",
+                     "renewableShare":  27.9
+                 },
+                 {
+                     "date":  "2017-01-01",
+                     "renewableShare":  23.9
+                 },
+                 {
+                     "date":  "2017-02-01",
+                     "renewableShare":  32.3
+                 },
+                 {
+                     "date":  "2017-03-01",
+                     "renewableShare":  35.4
+                 },
+                 {
+                     "date":  "2017-04-01",
+                     "renewableShare":  37.2
+                 },
+                 {
+                     "date":  "2017-05-01",
+                     "renewableShare":  35.1
+                 },
+                 {
+                     "date":  "2017-06-01",
+                     "renewableShare":  39
+                 },
+                 {
+                     "date":  "2017-07-01",
+                     "renewableShare":  35
+                 },
+                 {
+                     "date":  "2017-08-01",
+                     "renewableShare":  35
+                 },
+                 {
+                     "date":  "2017-09-01",
+                     "renewableShare":  32.6
+                 },
+                 {
+                     "date":  "2017-10-01",
+                     "renewableShare":  39.5
+                 },
+                 {
+                     "date":  "2017-11-01",
+                     "renewableShare":  31.3
+                 },
+                 {
+                     "date":  "2017-12-01",
+                     "renewableShare":  38.7
+                 },
+                 {
+                     "date":  "2018-01-01",
+                     "renewableShare":  38.7
+                 },
+                 {
+                     "date":  "2018-02-01",
+                     "renewableShare":  28.9
+                 },
+                 {
+                     "date":  "2018-03-01",
+                     "renewableShare":  34.6
+                 },
+                 {
+                     "date":  "2018-04-01",
+                     "renewableShare":  42.2
+                 },
+                 {
+                     "date":  "2018-05-01",
+                     "renewableShare":  43.4
+                 },
+                 {
+                     "date":  "2018-06-01",
+                     "renewableShare":  37.7
+                 },
+                 {
+                     "date":  "2018-07-01",
+                     "renewableShare":  33.4
+                 },
+                 {
+                     "date":  "2018-08-01",
+                     "renewableShare":  34.9
+                 },
+                 {
+                     "date":  "2018-09-01",
+                     "renewableShare":  36.7
+                 },
+                 {
+                     "date":  "2018-10-01",
+                     "renewableShare":  36.5
+                 },
+                 {
+                     "date":  "2018-11-01",
+                     "renewableShare":  31
+                 },
+                 {
+                     "date":  "2018-12-01",
+                     "renewableShare":  38.5
+                 },
+                 {
+                     "date":  "2019-01-01",
+                     "renewableShare":  36.7
+                 },
+                 {
+                     "date":  "2019-02-01",
+                     "renewableShare":  36.5
+                 },
+                 {
+                     "date":  "2019-03-01",
+                     "renewableShare":  48.8
+                 },
+                 {
+                     "date":  "2019-04-01",
+                     "renewableShare":  43.1
+                 },
+                 {
+                     "date":  "2019-05-01",
+                     "renewableShare":  44.5
+                 },
+                 {
+                     "date":  "2019-06-01",
+                     "renewableShare":  46.7
+                 },
+                 {
+                     "date":  "2019-07-01",
+                     "renewableShare":  40.9
+                 },
+                 {
+                     "date":  "2019-08-01",
+                     "renewableShare":  40
+                 },
+                 {
+                     "date":  "2019-09-01",
+                     "renewableShare":  42
+                 },
+                 {
+                     "date":  "2019-10-01",
+                     "renewableShare":  39.8
+                 },
+                 {
+                     "date":  "2019-11-01",
+                     "renewableShare":  33.4
+                 },
+                 {
+                     "date":  "2019-12-01",
+                     "renewableShare":  44.2
+                 },
+                 {
+                     "date":  "2020-01-01",
+                     "renewableShare":  42.1
+                 },
+                 {
+                     "date":  "2020-02-01",
+                     "renewableShare":  53.4
+                 },
+                 {
+                     "date":  "2020-03-01",
+                     "renewableShare":  47.9
+                 },
+                 {
+                     "date":  "2020-04-01",
+                     "renewableShare":  50.5
+                 },
+                 {
+                     "date":  "2020-05-01",
+                     "renewableShare":  52.6
+                 },
+                 {
+                     "date":  "2020-06-01",
+                     "renewableShare":  47.2
+                 },
+                 {
+                     "date":  "2020-07-01",
+                     "renewableShare":  49.4
+                 },
+                 {
+                     "date":  "2020-08-01",
+                     "renewableShare":  45.2
+                 },
+                 {
+                     "date":  "2020-09-01",
+                     "renewableShare":  39.5
+                 },
+                 {
+                     "date":  "2020-10-01",
+                     "renewableShare":  45.4
+                 },
+                 {
+                     "date":  "2020-11-01",
+                     "renewableShare":  37.1
+                 },
+                 {
+                     "date":  "2020-12-01",
+                     "renewableShare":  36.6
+                 },
+                 {
+                     "date":  "2021-01-01",
+                     "renewableShare":  34.5
+                 },
+                 {
+                     "date":  "2021-02-01",
+                     "renewableShare":  40.2
+                 },
+                 {
+                     "date":  "2021-03-01",
+                     "renewableShare":  43
+                 },
+                 {
+                     "date":  "2021-04-01",
+                     "renewableShare":  45
+                 },
+                 {
+                     "date":  "2021-05-01",
+                     "renewableShare":  52.6
+                 },
+                 {
+                     "date":  "2021-06-01",
+                     "renewableShare":  43.3
+                 },
+                 {
+                     "date":  "2021-07-01",
+                     "renewableShare":  44.6
+                 },
+                 {
+                     "date":  "2021-08-01",
+                     "renewableShare":  47.1
+                 },
+                 {
+                     "date":  "2021-09-01",
+                     "renewableShare":  36.8
+                 },
+                 {
+                     "date":  "2021-10-01",
+                     "renewableShare":  44.9
+                 },
+                 {
+                     "date":  "2021-11-01",
+                     "renewableShare":  33.9
+                 },
+                 {
+                     "date":  "2021-12-01",
+                     "renewableShare":  36.9
+                 },
+                 {
+                     "date":  "2022-01-01",
+                     "renewableShare":  43
+                 },
+                 {
+                     "date":  "2022-02-01",
+                     "renewableShare":  55
+                 },
+                 {
+                     "date":  "2022-03-01",
+                     "renewableShare":  38.8
+                 },
+                 {
+                     "date":  "2022-04-01",
+                     "renewableShare":  49.3
+                 },
+                 {
+                     "date":  "2022-05-01",
+                     "renewableShare":  50.4
+                 },
+                 {
+                     "date":  "2022-06-01",
+                     "renewableShare":  47.2
+                 },
+                 {
+                     "date":  "2022-07-01",
+                     "renewableShare":  47.8
+                 },
+                 {
+                     "date":  "2022-08-01",
+                     "renewableShare":  41.7
+                 },
+                 {
+                     "date":  "2022-09-01",
+                     "renewableShare":  43.1
+                 },
+                 {
+                     "date":  "2022-10-01",
+                     "renewableShare":  47.7
+                 },
+                 {
+                     "date":  "2022-11-01",
+                     "renewableShare":  43.5
+                 },
+                 {
+                     "date":  "2022-12-01",
+                     "renewableShare":  38.5
+                 },
+                 {
+                     "date":  "2023-01-01",
+                     "renewableShare":  48.5
+                 },
+                 {
+                     "date":  "2023-02-01",
+                     "renewableShare":  43.5
+                 },
+                 {
+                     "date":  "2023-03-01",
+                     "renewableShare":  51.2
+                 },
+                 {
+                     "date":  "2023-04-01",
+                     "renewableShare":  53.9
+                 },
+                 {
+                     "date":  "2023-05-01",
+                     "renewableShare":  63.1
+                 },
+                 {
+                     "date":  "2023-06-01",
+                     "renewableShare":  60.9
+                 },
+                 {
+                     "date":  "2023-07-01",
+                     "renewableShare":  65.9
+                 },
+                 {
+                     "date":  "2023-08-01",
+                     "renewableShare":  58.2
+                 },
+                 {
+                     "date":  "2023-09-01",
+                     "renewableShare":  55.8
+                 },
+                 {
+                     "date":  "2023-10-01",
+                     "renewableShare":  57.3
+                 },
+                 {
+                     "date":  "2023-11-01",
+                     "renewableShare":  55
+                 },
+                 {
+                     "date":  "2023-12-01",
+                     "renewableShare":  56.7
+                 },
+                 {
+                     "date":  "2024-01-01",
+                     "renewableShare":  55.2
+                 },
+                 {
+                     "date":  "2024-02-01",
+                     "renewableShare":  59.5
+                 },
+                 {
+                     "date":  "2024-03-01",
+                     "renewableShare":  56.9
+                 },
+                 {
+                     "date":  "2024-04-01",
+                     "renewableShare":  64.2
+                 },
+                 {
+                     "date":  "2024-05-01",
+                     "renewableShare":  65
+                 },
+                 {
+                     "date":  "2024-06-01",
+                     "renewableShare":  64.1
+                 },
+                 {
+                     "date":  "2024-07-01",
+                     "renewableShare":  64.7
+                 },
+                 {
+                     "date":  "2024-08-01",
+                     "renewableShare":  61.9
+                 },
+                 {
+                     "date":  "2024-09-01",
+                     "renewableShare":  62
+                 },
+                 {
+                     "date":  "2024-10-01",
+                     "renewableShare":  54.1
+                 },
+                 {
+                     "date":  "2024-11-01",
+                     "renewableShare":  47.3
+                 },
+                 {
+                     "date":  "2024-12-01",
+                     "renewableShare":  53.6
+                 },
+                 {
+                     "date":  "2025-01-01",
+                     "renewableShare":  51.3
+                 },
+                 {
+                     "date":  "2025-02-01",
+                     "renewableShare":  44.9
+                 },
+                 {
+                     "date":  "2025-03-01",
+                     "renewableShare":  51.7
+                 },
+                 {
+                     "date":  "2025-04-01",
+                     "renewableShare":  59.8
+                 },
+                 {
+                     "date":  "2025-05-01",
+                     "renewableShare":  69.9
+                 },
+                 {
+                     "date":  "2025-06-01",
+                     "renewableShare":  72.4
+                 },
+                 {
+                     "date":  "2025-07-01",
+                     "renewableShare":  62
+                 },
+                 {
+                     "date":  "2025-08-01",
+                     "renewableShare":  66.8
+                 },
+                 {
+                     "date":  "2025-09-01",
+                     "renewableShare":  64.9
+                 },
+                 {
+                     "date":  "2025-10-01",
+                     "renewableShare":  61.5
+                 },
+                 {
+                     "date":  "2025-11-01",
+                     "renewableShare":  50.1
+                 },
+                 {
+                     "date":  "2025-12-01",
+                     "renewableShare":  55.1
+                 },
+                 {
+                     "date":  "2026-01-01",
+                     "renewableShare":  49.7
+                 },
+                 {
+                     "date":  "2026-02-01",
+                     "renewableShare":  52.4
+                 },
+                 {
+                     "date":  "2026-03-01",
+                     "renewableShare":  57.4
+                 },
+                 {
+                     "date":  "2026-04-01",
+                     "renewableShare":  64.3
+                 },
+                 {
+                     "date":  "2026-05-01",
+                     "renewableShare":  64.4
+                 },
+                 {
+                     "date":  "2026-06-01",
+                     "renewableShare":  68.2
+                 },
+                 {
+                     "date":  "2026-07-01",
+                     "renewableShare":  69.5
+                 },
+                 {
+                     "date":  "2026-08-01",
+                     "renewableShare":  66.5
+                 }
+             ]
+}

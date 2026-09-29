@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stromerzeugung in Deutschland</title>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script> <!-- D3 -->
+  <link rel="stylesheet" href="older-adults.css">
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <h1>Stromerzeugung in Deutschland</h1>
+      </div>
+      <div class="theme-control" role="group" aria-label="Darstellung auswählen">
+        <button class="theme-option is-active" type="button" data-theme="light" aria-pressed="true">Hell</button>
+        <button class="theme-option" type="button" data-theme="dark" aria-pressed="false">Dunkel</button>
+      </div>
+    </header>
+    <div class="charts">
+      <section class="story-copy" aria-label="Platzhaltertext">
+        <p>Die Stromerzeugung in Deutschland ist ein Thema, das die meisten Menschen betrifft. Sie kann einen erheblichen Teil zum Umwelt- und Klimaschutz beitragen und bestimmt den Preis, den wir für unseren Strom bezahlen. In den letzten Jahren hat sich durch die Energiewende die Zusammensetzung der Stromerzeugung in Deutschland stark verändert.
+          Viele Trends und Entwicklungen lassen sich am besten erkennen, indem man die rohen Zahlen der Stromerzeugung graphisch aufbereitet. Eine gute Möglichkeit tiefere Erkenntnisse über die Stromerzeugung zu gewinnen, ist die eigenständige Exploration der Daten. Dazu soll hier die Möglichkeit gegeben werden. Über das i neben der Überschrift können die im jeweiligen Diagramm möglichen Interaktionen eingesehen werden.
+          <br>
+          Die erste Grafik zeigt den Anteil der Erzeugungsarten an der gesamten Stromerzeugung des Monats Juli 2026 pro Tag. Die y-Achse ist auf 100 % skaliert. Je größer der Beitrag einer Energiequelle, desto größer ist die entsprechende Fläche im Diagramm. In der Linienansicht wird der prozentuale Anteil der einzelnen Quellen besser sichtbar, wenn man diese hervorhebt.</p>
+      </section>
+      <section class="chart-panel" aria-labelledby="daily-heading">
+        <div class="chart-heading"><div>
+          <div class="heading-row"><h2 id="daily-heading">Strommix pro Tag</h2><span class="info-tooltip"><button class="info-button" type="button" aria-label="Hinweise zur Bedienung dieses Diagramms" aria-describedby="daily-info-text">i</button>
+          <span class="info-tooltip-text" id="daily-info-text" role="tooltip">Beim Fahren mit der Maus über das Diagramm, werden die genauen Prozentwerte für einen Tag angezeigt. Über „Fläche“ und „Linie“ kann zwischen Flächendiagramm und Liniendiagramm umgeschalten werden. Durch Klicken auf eine Energiequelle in der Legende, kann diese hervorgehoben werden. Ein erneuter Klick auf die Energiequelle hebt die Auswahl wieder auf. Dies funktioniert auch mit mehreren Quellen gleichzeitig. Mit „Zurücksetzen“ wird jegliche Hervorhebung aufgehoben, mit „Vollbild“ wird das Diagramm größer angezeigt.</span></span></div></div><div class="daily-header-actions"><div class="summary" id="daily-summary">Daten werden geladen …</div>
+          <div class="chart-type-control" role="group" aria-label="Diagrammtyp auswählen"><button class="chart-type-option daily-chart-type-option is-active" type="button" data-chart-type="area" aria-pressed="true">Fläche</button><button class="chart-type-option daily-chart-type-option" type="button" data-chart-type="line" aria-pressed="false">Linie</button></div></div></div>
+        <div id="daily-chart"></div>
+        <div class="chart-footer"><div class="chart-footer-row"><div class="legend" id="daily-legend"></div><div class="chart-footer-buttons"><button class="reset-chart-highlights" type="button" data-chart-id="daily-chart">Zurücksetzen</button><button class="fullscreen-chart" type="button" data-chart-id="daily-chart" aria-pressed="false">Vollbild</button></div></div></div>
+        <p class="chart-source">Quelle: <a href="https://energy-charts.info/?l=de&c=DE" target="_blank" rel="noopener">Energy-Charts (Fraunhofer-Institut für Solare Energiesysteme ISE)</a></p>
+      </section>
+      <section class="story-copy" aria-label="Platzhaltertext">
+        <p>Um die Entwicklung der Stromerzeugung über mehrere Jahre zu verfolgen, wird in folgender Darstellung der Strommix pro Monat seit Januar 2015 gezeigt. Mit dem Schalter kann die Darstellung nach erneuerbaren Energien sortiert und der Anteil dieser angezeigt werden. In dieser Ansicht wird der Fortschritt der Energiewende besonders deutlich, vor allem durch die Zunahme von Wind- und Solarenergie. Andere Erneuerbare wie Wasserkraft oder Biomasse nahmen kaum zu in den letzten Jahren, was darauf hindeutet, dass das Potential dieser Technologien schon sehr weit ausgeschöpft ist. Zudem kann man sehen, wie der Atomausstieg in 2023 durch den verstärkten Einsatz erneuerbarer Energien kompensiert wird. Auch die erhöhte Produktion von Solarstrom im Sommer und der Windenergie im Winter wird gut sichtbar.</p>
+      </section>
+      <section class="chart-panel" aria-labelledby="monthly-heading">
+        <div class="chart-heading"><div>
+          <div class="heading-row"><h2 id="monthly-heading">Strommix pro Monat</h2><span class="info-tooltip"><button class="info-button" type="button" aria-label="Hinweise zur Bedienung dieses Diagramms" aria-describedby="monthly-info-text">i</button>
+            <span class="info-tooltip-text" id="monthly-info-text" role="tooltip">
+              Über den Schalter unter der Legende wird die Darstellung nach erneuerbaren Energien sortiert und der Anteil dieser angezeigt. Beim Fahren mit der Maus über das Diagramm, werden die genauen Prozentwerte für einen Tag angezeigt. Über „Fläche“ und „Linie“ kann zwischen Flächendiagramm und Liniendiagramm umgeschalten werden. Durch Klicken auf eine Energiequelle in der Legende, kann diese hervorgehoben werden. Ein erneuter Klick auf die Energiequelle hebt die Auswahl wieder auf. Dies funktioniert auch mit mehreren Quellen gleichzeitig. Mit „Zurücksetzen“ wird jegliche Hervorhebung aufgehoben, mit „Vollbild“ wird das Diagramm größer angezeigt.</span></span></div></div><div class="monthly-header-actions"><div class="summary" id="monthly-summary">Daten werden geladen …</div>
+            <div class="chart-type-control" role="group" aria-label="Diagrammtyp auswählen"><button class="chart-type-option monthly-chart-type-option is-active" type="button" data-chart-type="area" aria-pressed="true">Fläche</button><button class="chart-type-option monthly-chart-type-option" type="button" data-chart-type="line" aria-pressed="false">Linie</button></div></div></div>
+        <div id="monthly-chart"></div>
+        <div class="chart-footer"><div class="chart-footer-row"><div class="legend" id="monthly-legend"></div><div class="chart-footer-buttons"><button class="reset-chart-highlights" type="button" data-chart-id="monthly-chart">Zurücksetzen</button><button class="fullscreen-chart" type="button" data-chart-id="monthly-chart" aria-pressed="false">Vollbild</button></div></div><label class="renewable-share-control"><input id="show-monthly-renewable-share" type="checkbox" role="switch"><span class="switch-track" aria-hidden="true"><span class="switch-thumb"></span></span>Erneuerbare hervorheben</label></div>
+        <p class="chart-source">Quelle: <a href="https://energy-charts.info/?l=de&c=DE" target="_blank" rel="noopener">Energy-Charts (Fraunhofer-Institut für Solare Energiesysteme ISE)</a></p>
+      </section>
+      <section class="story-copy" aria-label="Platzhaltertext">
+        <p>Die nächste Grafik zeigt den absolut erzeugten Strom der verschiedenen Energiequellen im 15-Minuten-Intervall über eine Woche im Juli 2026. Über den Schieberegler kann der betrachtete Zeitraum ausgewählt werden. Zudem wird der deutschlandweite Stromverbrauch (auch Last genannt) als Linie angezeigt. Wenn die Stromerzeugung größer ist als der Verbrauch, kann der Strom auf verschiedene Arten gespeichert werden. Übersteigt der Verbrauch die aktuelle Erzeugung, kann zusätzlicher Strom aus Speichern bezogen werden.
+          Dieser Effekt kann auch hier beobachtet werden am Beispiel der Pumpspeicherkraftwerke. Sie nutzen den überschüssigen Solarstrom um Wasser in die Speicherbecken zu pumpen und können immer abends, wenn kein Solarstrom mehr erzeugt werden kann, aus der potentiellen Energie des Wassers Strom erzeugen. Somit steigt die Leistung aus Wasserkraft in den Abendstunden an. 
+          Ebenfalls gut zu sehen in dieser Darstellung sind die großen Schwankungen der Solar- und Windenergie.</p>
+      </section>
+      <section class="chart-panel" aria-labelledby="interval-heading">
+        <div class="chart-heading"><div>
+          <div class="heading-row"><h2 id="interval-heading">Absolute Stromerzeugung</h2><span class="info-tooltip"><button class="info-button" type="button" aria-label="Hinweise zur Bedienung dieses Diagramms" aria-describedby="interval-info-text">i</button><span class="info-tooltip-text" id="interval-info-text" role="tooltip">So bedienen Sie dieses Diagramm: Mit dem Schieberegler unterhalb der Legende wählen Sie den angezeigten Sieben-Tage-Zeitraum aus. Fahren Sie mit der Maus über die Fläche, um die genauen Werte zu einem Zeitpunkt zu sehen. Klicken Sie auf einen Eintrag in der Legende, um nur diese Energiequelle hervorzuheben. Mit „Zurücksetzen“ wird die Auswahl gelöscht, über „Fläche“ und „Linie“ wechseln Sie die Darstellung, mit „Vollbild“ vergrößern Sie das Diagramm.</span></span></div></div><div class="interval-header-actions"><div class="summary" id="interval-summary">Daten werden geladen …</div><div class="chart-type-control" role="group" aria-label="Diagrammtyp auswählen"><button class="chart-type-option interval-chart-type-option is-active" type="button" data-chart-type="area" aria-pressed="true">Fläche</button><button class="chart-type-option interval-chart-type-option" type="button" data-chart-type="line" aria-pressed="false">Linie</button></div></div></div>
+        <div id="interval-chart"></div>
+        <div class="chart-footer"><div class="chart-footer-row"><div class="legend" id="interval-legend"></div><div class="chart-footer-buttons"><button class="reset-chart-highlights" type="button" data-chart-id="interval-chart">Zurücksetzen</button><button class="fullscreen-chart" type="button" data-chart-id="interval-chart" aria-pressed="false">Vollbild</button></div></div><div class="week-slider"><span class="week-slider-label">Zeitfenster wählen:</span><input id="interval-slider" type="range" min="0" max="0" value="0" step="1" aria-label="Sieben-Tage-Zeitraum für das 15-Minuten-Diagramm auswählen"></div></div>
+        <p class="chart-source">Quelle: <a href="https://energy-charts.info/?l=de&c=DE" target="_blank" rel="noopener">Energy-Charts (Fraunhofer-Institut für Solare Energiesysteme ISE)</a></p>
+      </section>
+      <section class="story-copy" aria-label="Platzhaltertext">
+        <p>Eine weitere Methode um Schwankungen der erneuerbaren Energien auszugleichen ist der Einsatz von Batteriespeichern. Wie man in der nächsten Grafik sehen kann, ist deren Popularität in den letzten Jahren stark gestiegen. Jedoch sind der größte Teil der installierten Batteriekapazität viele kleine dezentrale Heimspeicher, die oft nur zur Eigenversorgung genutzt werden, um eine private Solaranlage optimal zu nutzen. Viele von diesen Heimspeichern können oder dürfen nicht ins öffentliche Netz einspeisen. Sie verringern aber die Spitze der Solarproduktion, mit der das Netz belastet wird, indem sie einen Teil des erzeugten Stroms direkt speichern. Großspeicher und Gewerbespeicher, die das Stromnetz stabilisieren können, machen bisher nur einen kleinen Teil aus. Im Vergleich zur installierten Leistung der Pumpspeicherkraftwerke von etwa 39GW, spielen die aktuellen Speicher mit wenigen Gigawatt noch eine relativ kleine Rolle. Es wird erwartet, dass die Bedeutung von Batteriespeichern weiter zunimmt. Vor allem, wenn das Potential der Nutzung von Elektroautos als Batteriespeicher berücksichtigt wird, welches bisher aufgrund von technischen und rechtlichen Einschränkungen noch nicht realisiert ist.</p>
+      </section>
+      <section class="chart-panel" aria-labelledby="battery-heading">
+        <div class="chart-heading"><div>
+          <div class="heading-row"><h2 id="battery-heading">Batteriespeicher in Deutschland</h2><span class="info-tooltip"><button class="info-button" type="button" aria-label="Hinweise zur Bedienung dieses Diagramms" aria-describedby="battery-info-text">i</button><span class="info-tooltip-text" id="battery-info-text" role="tooltip">So bedienen Sie dieses Diagramm: Fahren Sie mit der Maus über die Fläche, um die genauen Werte zu sehen. Klicken Sie auf einen Eintrag in der Legende, um nur diese Speicherart hervorzuheben. Mit „Zurücksetzen“ wird die Auswahl gelöscht, über „Fläche“ und „Linie“ wechseln Sie die Darstellung, mit „Vollbild“ vergrößern Sie das Diagramm.</span></span></div></div><div class="battery-header-actions"><div class="summary" id="battery-summary">Daten werden geladen …</div><div class="chart-type-control" role="group" aria-label="Diagrammtyp auswählen"><button class="chart-type-option battery-chart-type-option is-active" type="button" data-chart-type="area" aria-pressed="true">Fläche</button><button class="chart-type-option battery-chart-type-option" type="button" data-chart-type="line" aria-pressed="false">Linie</button></div></div></div>
+        <div id="battery-chart"></div>
+        <div class="chart-footer"><div class="chart-footer-row"><div class="legend" id="battery-legend"></div><div class="chart-footer-buttons"><button class="reset-chart-highlights" type="button" data-chart-id="battery-chart">Zurücksetzen</button><button class="fullscreen-chart" type="button" data-chart-id="battery-chart" aria-pressed="false">Vollbild</button></div></div></div>
+        <p class="chart-source">Quelle: <a href="https://battery-charts.de/de/battery-charts-de/" target="_blank" rel="noopener">Battery Charts (RWTH Aachen)</a>, basierend auf dem Marktstammdatenregister der Bundesnetzagentur</p>
+      </section>
+      <section class="story-copy" aria-label="Platzhaltertext">
+        <p>Dies ist nur ein kleiner Einblick, welche Daten über das Stromnetz vorhanden sind und welche Erkenntnisse mithilfe von Visualisierungen daraus gezogen werden können. Bei weiterem Interesse lohnt sich ein Blick auf <a href="https://energy-charts.info/?l=de&c=DE" target="_blank" rel="noopener">Energy Charts</a>, dem Datenportal des Fraunhofer-Instituts. Dort können viele weitere Daten aus verschiedensten Bereichen der Energieversorgung in Deutschland visuell erkundet werden, wie z.B. Energiepreise, Stromhandel, Speicherfüllstände, Umweltbilanzen, Zukunftsprognosen und vieles mehr.</p>
+      </section>
+
+    </div>
+  </main>
+  <div class="tooltip" id="tooltip"></div>
+
+  <script src="older-adults.js"></script>
+</body>
+</html>
